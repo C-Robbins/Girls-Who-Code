@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Example</title>
+    <script>
+      function myFunction() {
+        var image = document.getElementById("gabby");
+			if (image.src =="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/Images/v1.jpg"){
+				image.src = "file:///C:/Users/Girls%20Who%20Code/Documents/HTML/Images/v2.jpg";
+				image.style = "width:25%;height:25%;"
+			}
+			else{
+				image.src = "file:///C:/Users/Girls%20Who%20Code/Documents/HTML/Images/v1.jpg";
+				image.style = "width:15%; height:25%;"
+			}
+		}	
+    </script>
+  </head>
+  <body>
+	<h3 style="text-align:left;">Click the image to switch it!</h3>
+    <img src="file:///C:/Users/Girls%20Who%20Code/Documents/HTML/Images/v1.jpg" alt="Gabby" style="width:15%; height:25%;" id="gabby" onclick="myFunction()"/>
+  </body>
+</html>
